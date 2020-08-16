@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<!--https://stackoverflow.com/questions/30016548/load-table-data-from-mysql-into-one-input-field-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECard</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-xs-12" style="margin:20px 0px 0px 0px;">
+            <div></div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <input id="fName" name="fName" type="text">
+                </div>
+                <div class="col-md-12">
+                    <label>First name</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1 col-xs-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <input id="MI" name="MI" type="text" style="width:50px;">
+                </div>
+                <div class="col-md-12 col-xs-12">
+                    <label>MI </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <input id="lName" name="lName" type="text">
+                </div>
+                <div class="col-md-12">
+                    <label>Last Name</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12" style="margin:20px 0px 0px 0px;">
+            <div></div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <input id="DOB" name="DOB" type="text">
+                </div>
+                <div class="col-md-12">
+                    <label>Date of Birth (mm/dd/yyyy)</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="margin:20px 0px 0px 0px;">
+            <div></div>
+        </div>
+        <div class="col-xs-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <input id="Address" name="Address" type="text">
+                </div>
+                <div class="col-md-12">
+                    <label>Street Address</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12" style="margin:20px 0px 0px 0px;">
+            <div></div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <input id="City" name="City" type="text">
+                </div>
+                <div class="col-md-12">
+                    <label>City </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="margin:20px 0px 0px 0px;">
+            <div></div>
+        </div>
+        <div class="col-sm-1 col-xs-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <input id="State" name="State" type="text" style="width:50px;">
+                </div>
+                <div class="col-md-12">
+                    <label>State </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="margin:20px 0px 0px 0px;">
+            <div></div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <input id="Zip" name="Zip" type="text">
+                </div>
+                <div class="col-md-12">
+                    <label>Zip Code </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12" style="margin:20px 0px 0px 0px;">
+            <div></div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <input id="Email" name="Email" type="text">
+                </div>
+                <div class="col-md-12">
+                    <label>Email </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="margin:20px 0px 0px 0px;">
+            <div></div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <input id="" name="" type="text">
+                </div>
+                <div class="col-md-12">
+                    <label>Confirm Email</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12" style="margin:20px 0px 0px 0px;">
+            <div></div>
+        </div>
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <input id="Phone" name="Phone" type="text">
+                </div>
+                <div class="col-md-12">
+                    <label>Phone Number (555)-555-5555</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12" style="margin:20px 0px 0px 0px;">
+            <div></div>
+        </div>
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <label>School District</label>
+                </div>
+                <div class="col-md-12">
+                    <div class="radio">
+                        <label>
+                            <input type="radio">Elyria City School District</label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="radio">
+                        <label>
+                            <input type="radio">Keystone School District</label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="radio">
+                        <label>
+                            <input type="radio">Other</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12" style="margin:20px 0px 0px 0px;">
+            <div></div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <input id="" name="" type="text">
+                </div>
+                <div class="col-md-12">
+                    <label>Barcode </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <input id="Assigned" name="Assigned" type="text">
+                </div>
+                <div class="col-md-12">
+                    <label>Assigned by : </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12" style="margin:20px 0px 0px 0px;">
+            <div></div>
+        </div>
+        <!--<div class="col-sm-3 col-xs-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <label>Assigned: </label>
+                    <div class="radio">
+                        <label>
+                            <input type="radio">Yes</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio">No</label>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="margin:20px 0px 0px 0px;">
+            <div></div>
+        </div>
+        <div class="col-xs-12" style="margin:20px 0px 0px 0px;">
+            <div></div>
+        </div>
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <button class="btn btn-default" type="button">Submit </button>
+                </div>
+                <div class="col-xs-6">
+                    <button class="btn btn-default" type="button">Print </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
